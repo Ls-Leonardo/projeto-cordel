@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --fonte1: verdana, arial;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: "Sriracha", cursive;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: rgba(169, 169, 169, 0.582);
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+
+
+header > h1{
+    padding-top: 50px;
+    font-family: var(--fonte2);
+    font-variant: small-caps;   /* faz com que a primeira letra seja maiúscula */
+
+    font-size: 10vw; /* 10% da largura da sua tela, pq ainda não sabemos recursos de responsividade avançados. */  
+    
+    
+}
+
+header > p{
+    
+    padding-bottom: 50px;
+
+    
+}
+
+
+
+section{
+    font-size: 3.3vw;
+    font-family: var(--fonte3);
+    padding-top: 10vh;  /* equivale a 10% da altura da tela */
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;  /* usei padding e não margin, acabou sendo melhor pq com margin fica mostrando um pedaço do body (que é cinza) */ 
+}
+
+section > p{
+    padding-bottom: 2em ;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    color: white;
+    background-color: gray;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.459);
+    background-size: cover;
+    background-attachment: fixed; /* efeito PARALLAX simples */
+    
+}
+
+section.imagem > p{
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.74);
+    background-color: rgba(0, 0, 0, 0.356);
+    display: inline-block;  /* transformei um bloco normal em um bloco que se adapta ao contéudo! */
+    padding: 5px;
+    
+}
+
+#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    
+}
+
+#img02{
+    background-image: url(../imagens/background002.jpg);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    font-family: var(--fonte1);
+    color: white;
+    background-color: black;
+    padding: 10px;
+
+}
+
