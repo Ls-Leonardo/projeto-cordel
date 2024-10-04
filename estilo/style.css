@@ -51,7 +51,7 @@ header > p{
 
 
 section{
-    font-size: 3.3vw;
+    font-size: clamp(16px, 3.3vw, 29px);
     font-family: var(--fonte3);
     padding-top: 10vh;  /* equivale a 10% da altura da tela */
     padding-bottom: 10vh;
